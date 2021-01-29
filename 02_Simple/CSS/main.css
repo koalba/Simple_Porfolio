@@ -1,0 +1,552 @@
+:root {
+  --color-green: #4CC05C;
+  /* rgb(76,192,92) */
+  --color-darkGray: #454545;
+  /* rgb(69,69,69) */
+  --color-lightGray: #ECECEC;
+  /* rgb(236,236,236) */
+}
+
+body{
+  position: relative;
+  box-sizing: border-box;
+  color: var(--color-darkGray);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1250px;
+}
+
+.Button{
+  display: inline-block;
+  font-family: 'Cooper Hewitt Book';
+  letter-spacing: -0.03rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border: solid 3px var(--color-green);
+  color: var(--color-green);
+  border-radius: 100px;
+  background-color: rgb(76,192,92, 0);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Text {
+  font-family: 'Source Sans Pro';
+  letter-spacing:0.11rem;
+  font-size: 0.80rem;
+  /* 100tracking = 0.1rem */
+}
+
+.myTitle{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Cooper Hewitt';
+  font-weight: bold;
+  letter-spacing: -0.03rem;
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding-top: 9rem;
+  text-align: center;
+}
+
+.myTitle span{
+  width: 6rem;
+  display: block;
+  border-top: 8px solid var(--color-green);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.myTitle2{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Cooper Hewitt Book';
+  letter-spacing: -0.03rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.myTitle2 span{
+  width: 6rem;
+  display: block;
+  border-top: 4px solid var(--color-green);
+  margin-top: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.triangle{
+  width: 15rem;
+  height: 10rem;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  background-color: var(--color-darkGray);
+  clip-path: polygon(50% 40%, 0 0, 100% 0);
+}
+
+.Subtitle{
+  font-family: 'Cooper Hewitt Book';
+  letter-spacing: -0.03rem;
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
+
+#main__header{
+  z-index: 2;
+  position: relative;
+  width: 100vw;
+}
+
+#main__nav {
+  position: fixed;
+  right: 1rem;
+  color: var(--color-lightGray);
+  padding: 1.5rem 0 1.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main__nav ul {
+  display: flex;
+  flex-direction: row;
+  /* font-family: 'Cooper Hewitt Book';
+  font-size: 16px; */
+}
+
+#main__nav ul li{
+  color: var(--color-lightGray);
+  padding: 0 2px 0.5rem 2px;
+  margin: 0 1.5rem 0 1.5rem;
+  border-bottom: solid 1.5px rgb(0, 0, 0, 0);
+  text-shadow: 1px 1px 2px var(--color-darkGray);
+}
+
+#main__nav ul li:hover{
+  transition: 0.3s;
+  color: var(--color-green);
+  cursor: pointer;
+  border-bottom: solid 1.5px var(--color-green);
+}
+
+#main__header h3 {
+  color: var(--color-lightGray);
+  position: fixed;
+  left: 1rem;
+  padding: 1.5rem 0 1.5rem 0.5rem;
+  font-family: 'Cooper Hewitt';
+  font-weight: bold;
+  font-size: 1.563rem;
+  text-shadow: 1px 1px 2px var(--color-darkGray);
+}
+
+#main__hero{
+  height: 100vh;
+  background-color: var(--color-darkGray);
+}
+#main__hero .container{
+  padding-top: 10rem;
+}
+
+#main__hero p{
+  font-family: 'Cooper Hewitt Book';
+  letter-spacing: -0.03rem;
+  font-size: 2.5rem;
+  color: var(--color-lightGray);
+}
+
+#main__hero p:last-of-type{
+  margin-bottom: 8rem;
+}
+
+#main__hero h1{
+  font-family: 'Cooper Hewitt';
+  font-weight: bold;
+  font-size: 8rem;
+  color: var(--color-green);
+  padding: 1rem 0 1rem 0;
+}
+
+#main__hero .Button:hover{
+  background-color: rgb(76,192,92,1);
+  color: var(--color-lightGray);
+  /* transition: all 0.3s ease-in-out; */
+}
+
+/* --------------------------ABOUT ME------------------------------ */
+
+#main__AboutMe{
+  position:relative;
+  background-color: var(--color-lightGray);
+}
+
+#main__AboutMe .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main__AboutMe p{
+  width: 60%;
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+#main__AboutMe ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7rem;
+}
+
+#main__AboutMe li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 0 2rem;
+}
+
+#main__AboutMe img{
+  max-width: 50px;
+}
+
+#main__AboutMe ul li div p{
+  text-align: left;
+  padding-bottom: 0;
+  width: auto;
+  padding-top: 0.5rem;
+}
+
+#main__AboutMe ul li span{
+  height: 7rem;
+  display: block;
+  border-left: 5px solid var(--color-green);
+  margin: 0 1rem 0 1rem;
+}
+
+/* ----------------------ABOUT ME - EXPERIENCIA--------------------- */
+
+#AboutMe__Exp{
+  background-color: var(--color-darkGray);
+  color: var(--color-lightGray);
+}
+
+#AboutMe__Exp ul li span{
+  width: 35px;
+  height: 35px;
+  background-color: var(--color-green);
+  border: solid 0 white;
+  border-radius: 100px;
+  margin-bottom: 1rem;
+}
+
+#AboutMe__Exp ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#AboutMe__Exp ul li{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 18rem;
+}
+
+#AboutMe__Exp ul li p{
+  padding-bottom: 2rem;
+  color: var(--color-green);
+  /* word-break: break-all;
+  hyphens: auto; */
+}
+
+#AboutMe__Exp ul li div p{
+  text-align: left;
+}
+
+#AboutMe__Exp ul li h2{
+  padding-bottom: 0.25rem;
+  text-align: left;
+}
+
+#AboutMe__Exp em{
+  color: var(--color-lightGray);
+  font-style: normal;
+}
+
+#AboutMe__Exp ul li:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color: var(--color-green);
+  top: 14px;
+  left: -50%;
+}
+
+#AboutMe__Exp ul li:first-child:after{
+  content: none;
+}
+
+/* ----------------------ABOUT ME - SKILLS--------------------- */
+
+#AboutMe__Skills h4{
+  text-indent: 0.25rem;
+  padding-top: 0.25rem;
+  text-transform: initial;
+}
+
+#AboutMe__Skills .SkillChart{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#AboutMe__Skills .Skill li{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#AboutMe__Skills .Skill{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+#AboutMe__Skills .LVL{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+#AboutMe__Skills .LVL li{
+  height: 22px;
+  width: 35px;
+  margin: 0.1rem;
+  padding: 0;
+  margin-top: 0.25rem;
+  background-color: var(--color-darkGray);
+}
+
+#AboutMe__Skills .LVL .Active{
+  background-color: var(--color-green);
+}
+
+/* ----------------------------WORK-------------------------- */
+
+#main__Work{
+  background-color: var(--color-darkGray);
+  color: var(--color-lightGray);
+  min-height: 100vh;
+  padding-bottom: 7rem;
+}
+
+#main__Work .triangle{
+  background-color: var(--color-lightGray);
+}
+
+#main__Work .myTitle{
+  color: var(--color-lightGray);
+}
+
+#main__Work .work_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 5px 0px 0px rgba(76,192,92,1);
+}
+
+#main__Work .work_nav li{
+  border-radius: 10px;
+  width: 15%;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+  color: var(--color-lightGray);
+}
+
+#main__Work .work_nav li:hover {
+  color: var(--color-green);
+  cursor: pointer;
+}
+
+#main__Work .work_nav .active{
+ color: var(--color-green);
+}
+
+#main__Work .work{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#main__Work .work li img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#main__Work .work li{
+  box-shadow: 0px 0px 11px -3px rgba(0,0,0,0.2);
+}
+
+#main__Work .Description{
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+
+#main__Work .work .Description .Subtitle{
+color: var(--color-darkGray);
+font-family: 'Cooper Hewitt';
+font-weight: bold;
+font-size: 1.563rem;
+}
+
+#main__Work .Description img{
+  padding-bottom: 1rem;
+  max-width: 80px;
+  height: auto;
+}
+
+#main__Work .Hover{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: var(--color-green);
+  box-shadow: inset 0px 0px 59px -24px var(--color-darkGray);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out, box-shadow 0s;
+}
+
+#main__Work .work li:hover .Description{
+opacity: 1;
+}
+
+#main__Work .work li:active .Hover{
+box-shadow: inset 0px 0px 191px -24px var(--color-darkGray);
+}
+
+#main__Work .work li:hover .Hover{
+opacity: 0.75;
+}
+
+#main__Work .work li{
+  cursor:pointer;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.work_inactive{
+  display: none;
+}
+
+/* ----------------------------- CONTACT ----------------------------- */
+
+#main__Contact{
+  background-color: var(--color-green);
+}
+
+#main__Contact .myTitle{
+  color: var(--color-lightGray);
+}
+
+#main__Contact .myTitle span{
+  border-top: 8px solid var(--color-darkGray);
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main__Contact .ContactInfo fieldset{
+  padding-bottom: 1.5rem;
+}
+
+/* #main__Contact .ContactInfo .Text{
+  padding-right: 0;
+} */
+
+#main__Contact .ContactInfo fieldset input{
+  min-width: 500px;
+  min-height: 25px;
+  padding: 0.5rem;
+  font-family: 'Source Sans Pro';
+  letter-spacing:0.11rem;
+  font-size: 0.80rem;
+  color: var(--color-darkGray);
+}
+
+#main__Contact .ContactInfo fieldset input::placeholder, #main__Contact .Text textarea::placeholder{
+  font-family: 'Source Sans Pro';
+  letter-spacing:0.11rem;
+  font-size: 0.80rem;
+  color: var(--color-green);
+}
+
+#main__Contact .Text textarea{
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 175px;
+  max-height: 250px;
+  padding: 0.5rem;
+  font-family: 'Source Sans Pro';
+  letter-spacing:0.11rem;
+  font-size: 0.80rem;
+  color: var(--color-darkGray);
+}
+
+#contact{
+  padding-bottom: 7rem;
+}
